@@ -1,72 +1,77 @@
 <!doctype html>
 <html lang="pt-BR">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-        <link rel="stylesheet" href="../css/styles.css">
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <title>FitLife - TMB</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <a href="..\index.html">Fitlife</a>
+      <a href="..\index.html" id="logo">
+        <i class="fas fa-heartbeat"></i>FitLife
+      </a>
 
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="./imc.html">IMC</a></li>
-            <li><a href="./tmb.html">TMB</a></li>
-            <li><a href="./water.html">Água</a></li>
-        </ul>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="./imc.html" class="nav-link">IMC</a></li>
+        <li><a href="./tmb.html" class="nav-link active">TMB</a></li>
+        <li><a href="./water.html" class="nav-link">Água</a></li>
+      </ul>
     </nav>
 
     <main>
-        <section>
-            <form action="">
-                <div>
-                    <label for="gender">Gênero</label>
-                    <select name="gender" id="gender">
-                        <option value="female">Femino</option>
-                        <option value="male">Masculino</option>
-                    </select>
-                </div>
+      <section>
+        <form action="">
+          <div>
+            <label for="gender">Gênero</label>
+            <select name="gender" id="gender">
+              <option value="female">Femino</option>
+              <option value="male">Masculino</option>
+            </select>
+          </div>
 
-                <div>
-                    <label for="height">Altura (cm)</label>
-                    <input type="number" id="height" placeholder="Ex: 170" />
-                </div>
+          <div>
+            <label for="height">Altura (cm)</label>
+            <input type="number" id="height" placeholder="Ex: 170" />
+          </div>
 
-                <div>
-                    <label for="weight">Peso (kg)</label>
-                    <input type="number" id="weight" placeholder="Ex: 70" />
-                </div>
+          <div>
+            <label for="weight">Peso (kg)</label>
+            <input type="number" id="weight" placeholder="Ex: 70" />
+          </div>
 
-                <div>
-                    <label for="age">Idade (anos)</label>
-                    <input type="number" id="age" placeholder="Ex: 18" />
-                </div>
+          <div>
+            <label for="age">Idade (anos)</label>
+            <input type="number" id="age" placeholder="Ex: 18" />
+          </div>
 
-                <button>Calcular calorias</button>
-            </form>
+          <button>Calcular calorias</button>
+        </form>
 
-            <a href="../index.html">Voltar</a>
+        <a href="../index.html">Voltar</a>
 
-            <div>
-                <p>Gasto calórico basal:</p>
-                <p>0000</p>
-                <p>Kcal/dia</p>
-            </div>
-        </section>
+        <div>
+          <p>Gasto calórico basal:</p>
+          <p>0000</p>
+          <p>Kcal/dia</p>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>© 2026 FitLife</p>
+      <p>© 2026 FitLife</p>
     </footer>
-</body>
-
+  </body>
 </html>
