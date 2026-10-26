@@ -10,6 +10,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/styles.css" />
+
+    <link rel="stylesheet" href="../css/water.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -32,26 +34,27 @@
     </nav>
 
     <main>
-      <section>
-        <h3>Hidratação</h3>
-        <p>Meta diária: 2500 ml</p>
-        <div>
-          <button>+ 250ml</button>
-          <button>Zerar</button>
+      <section class="tool-container">
+
+        <div class="tool-container-title">
+          <h2><i class="fas fa-tint"></i>Hidratação</h2>
+          <p>Meta: 2500ml</p>
         </div>
 
-        <div>
-          <p>Progresso</p>
+        <div class="water-controls">
+          <button class="action-btn btn-water-add">+ 250ml</button>
+          <button class="action-btn btn-water-reset">Zerar</button>
+        </div>
+
+        <div class="progress-container">
+          <div id="water-bar" class="progress-bar">0%</div>
         </div>
 
         <p>Total: 0 ml</p>
 
-        <a href="../index.html">Voltar</a>
+        <a class="action-btn btn-back" href="../index.html">Voltar</a>
       </section>
     </main>
 
-    <footer>
-      <p>© 2026 FitLife</p>
-    </footer>
   </body>
 </html>
