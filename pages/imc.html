@@ -48,18 +48,20 @@
             <input type="number" placeholder="Ex: 1.7" id="height" />
           </div>
 
-          <button class="action-btn">Calcular</button>
+          <button class="action-btn" type="submit" onclick="calcularIMC(event)">Calcular</button>
           <a class="action-btn btn-back" href="../index.html">Voltar</a>
         </form>
 
-        <div class="result-box">
+        <div id="result-box" class="result-box">
           <p>Seu IMC é:</p>
-          <p>00.0</p>
+          <p id="result">00.0</p>
           <p>Classificação</p>
         </div>
 
       </section>
     </main>
+
+    <script src="../js/imc.js"></script>
 
   </body>
 </html>
